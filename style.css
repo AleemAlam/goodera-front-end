@@ -7,7 +7,7 @@ body {
   background-color: lightgray;
 }
 .header {
-  min-height: 50vh;
+  min-height: 420px;
   width: 100%;
   background: linear-gradient(
     90deg,
@@ -53,7 +53,7 @@ nav {
 .text-box {
   position: absolute;
   height: 72px;
-  left: 204px;
+  left: 10.5%;
   top: 142px;
   font-style: normal;
   font-weight: bold;
@@ -82,7 +82,7 @@ nav {
   top: -55px;
 }
 .search-input {
-  font-size: 32px;
+  font-size: 28px;
   color: #888;
   font-weight: 100;
 }
@@ -90,6 +90,7 @@ nav {
   border: none;
   font-size: 25px;
   outline: none;
+  padding-left: 10px;
 }
 .search-box button {
   background-color: #f17887;
@@ -99,4 +100,103 @@ nav {
   border: none;
   border-radius: 10px;
   color: white;
+}
+
+.jobs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 79%;
+  margin: auto;
+  justify-content: space-between;
+}
+.card {
+  min-width: 400px;
+  width: 45%;
+  height: 200px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 38px;
+}
+.card-image {
+  width: 70%;
+
+  background-color: lightgray;
+  border-radius: 10px;
+}
+.card-details {
+  padding: 0px 15px;
+  position: relative;
+}
+
+.card-details h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+.card-details p {
+  font-size: 14px;
+  font-weight: 500;
+  color: gray;
+}
+.card-details button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #f17887;
+  padding: 7px 20px;
+  background-color: #fff;
+  font-size: 15px;
+  color: #f17887;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 1760px) {
+  .search-input input {
+    width: 400px;
+  }
+}
+@media (max-width: 1560px) {
+  .search-input input {
+    width: 300px;
+  }
+}
+@media (max-width: 1560px) {
+  .search-input input {
+    width: 200px;
+  }
+  .card {
+    min-width: 300px;
+    width: 42%;
+    height: 150px;
+  }
+}
+@media (max-width: 1560px) {
+  .search-box {
+    display: block;
+  }
+  .search-input input {
+    width: 80%;
+    margin: 20px;
+  }
+}
+@media (max-width: 1230px) {
+  .card {
+    min-width: 300px;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1056px) {
+  .text-box p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 776px) {
+  .text-box p {
+    font-size: 15px;
+  }
 }
